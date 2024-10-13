@@ -2,7 +2,7 @@
     "name": "ddos Codespace",
     "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
     "postStartCommand": "echo '*'; echo '*         @Spike_Magic Bot Running      *'; echo '*'; python /workspaces/ddos/LEGEND.py",
-    "postCreateCommand": "pip install pymongo python-telegram-bot pyTelegramBotAPI certifi && chmod +x /workspaces/ddos/*",
+    "postCreateCommand": "pip install pymongo python-telegram-bot pyTelegramBotAPI certifi; find /workspaces/ddos/ -name '*.py' -exec chmod +x {} +",
     "customizations": {
         "vscode": {
             "settings": {
